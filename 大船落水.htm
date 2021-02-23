@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <link href="https://tauhu.tw/tauhu-oo.css" rel="stylesheet">
+</head>  
+<body onload=text1();>
+<style>
+  @font-face {
+  font-family: "JasonHandwriting1-Regular";
+  src: url(https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@20210117/webfont/JasonHandwriting1-Regular.woff2) format("woff2")
+  , url(https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@20210117/webfont/JasonHandwriting1-Regular.woff) format("woff");
+  }
+  pre {
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  }
+  span:hover { 
+/*    color: #ffffff; 
+    background-color:green; */
+ -webkit-user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+user-select:none;    
+</style>
+<textarea id=textarea1 rows=10 onchange=text1(); style=font-family: JasonHandwriting1-Regular;>
+
+
+大船落水,展希望
+作者:李盈萱
+
+佇我細漢時仔的記持內底，阿公真罕得轉來厝裡，定定一兩個月才會轉來一擺。大人講阿公佇旗津咧做船仔，因為有足濟穡頭愛做，所以無通定定轉來，愛蹛佇工廠，等若另日船仔欲落水，才叫阿爸𤆬恁去揣阿公，順紲抾麻糍。
+
+通常做一隻掠旗魚抑是串仔的漁船，需要半年的時間，來訂做船仔的人就號做「船頭家」。因為船仔若是停佇造船廠的架仔頂，著愛付予船公司袂輸停車費仝款的停船仔費，所以等到船仔欲完工的時，船頭家就會開始揀一个離完工上倚的好日子，舉辦鬧熱的落水典禮，通好祈求未來船仔作業平安、萬項順序、掠著大魚趁大錢。
+
+船仔落水這工，落水典禮的現場，有印船公司名稱兼船號的旗仔，就親像萬國旗仝款，牽甲滿四界。今仔日的主角─欲落水的船隻就停佇有輪仔的棧枋頂，一粒閣一粒紅絳絳的綵球兼一大捾的炮仔結佇船仔邊，工人親像蜂仔佇現場無閒tshih-tshih，每一項細節攏袂使落勾去。船頂早就共船頭家用心準備的一箱閣一箱的麻糍攢好勢，好時一到，船頭家先佇船頂拜拜，祈求神明保庇大豐收，工廠內的大隻天車開始振動，共連接船仔的樓梯吊離開，紲落來船仔開始準備欲落水，船跤的民眾逐家已經共大大細細的塑膠橐仔攢便便咧張等，準備欲來大豐收。炮仔一點落，船頂的工人就開始共一包閣一包的麻糍擲落船跤，若拄著好年冬，有時閣會摻一兩包有橐錢的紅包，船跤民眾就親像腹肚枵的魚仔欲食餌，綴物件抌落來的所在四界傱，目睭若無擘予金，毋但物件一目𥍉仔就無去，跤也會予熱情的民眾踏甲腫uainn-uainn。
+
+原本用大索固定牢的船仔，綴放冗去的索仔，順棧枋跤的鐵枝路沓沓仔趨落海。一觸久仔有的人就已經大包細包，滿面春風，無抾著的人也免傷心，通常抾較濟麻糍的人，也會分一寡仔送予遐的跤手較慢的。對遮，咱通看著臺灣人可愛閣善良的一面，祝福船仔大豐收的落水典禮到遮來，就算是圓滿收煞矣。
+
+
+
+
+
+</textarea><br>
+<button onclick=text1();>轉</button><button onclick=document.getElementById("textarea1").select();>全選</button>
+<input type=button onclick=changFontSize(+1) value="+1px"></button>
+<input type=button onclick=changFontSize(+10) value="+10px"></button>
+<input type=button onclick=changFontSize(-1) value="-1px"></button>
+<input type=button onclick=changFontSize(-10) value="-10px"></button>
+<input type=button id=bt1 value="24px"></button>
+<pre id=div1 style="font-family: JasonHandwriting1-Regular; word-wrap:break-word;overflow:hidden; background: black; color:white">
+
+</pre>
+<script>
+  iFontSize=24; var 按下時的背景顏色="white"; var 移開時的背景顏色="black";
+                var 按下時的文字顏色="black"; var 移開時的文字顏色="white";
+  function changFontSize(s){
+    iFontSize+=s;
+    document.getElementById("div1").style.fontSize = iFontSize + "px";
+    document.getElementById("bt1").value = iFontSize + "px";
+  }  
+function text1(){
+   var t1 = document.getElementById("textarea1");  
+   var str = t1.value;
+   var d1 = document.getElementById("div1");  d1.innerHTML="";
+   str_array = new Array();
+//   str=str.replace(/\,/g, "按下變色,按下變色");
+//   str=str.replace(/\./g, "按下變色.按下變色");
+//   str=str.replace(/\?/g, "按下變色?按下變色");
+//   str=str.replace(/\:/g, "按下變色\n按下變色");
+   str=str.replace(/\？/g, "按下變色？按下變色");
+   str=str.replace(/\uff0c/g, "按下變色，按下變色");
+   str=str.replace(/\u3002/g, "按下變色。按下變色");
+   str=str.replace(/\n/g, "按下變色\n按下變色");
+   str=str.replace(/\：/g, "按下變色：按下變色");
+   str=str.replace(/\；/g, "按下變色；按下變色");
+   str=str.replace(/\u3001/g, "按下變色、按下變色");
+   str=str.replace(/\u2500/g, "按下變色─按下變色");
+   str_array = str.split("按下變色");
+   for(i=0; i<str_array.length; i++){
+      d1.innerHTML+="<span onmouseup=up(this); ontouchend=up(this); onmousedown=down(this); ontouchstart=down(this);>" + str_array[i] +"</span>";
+   }
+}
+function down(t){
+  t.style.backgroundColor=按下時的背景顏色;
+  t.style.color=按下時的文字顏色;
+}  
+function up(t){
+  t.style.backgroundColor=移開時的背景顏色;
+  t.style.color=移開時的文字顏色;
+}    
+function font_change(f){
+  document.getElementById("div1").style.fontFamily=f;
+}
+
+</script>
+</body>
+</html>
